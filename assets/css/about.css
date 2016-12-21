@@ -1,0 +1,158 @@
+/*-----------------------------
+    Overrides
+-----------------------------*/
+
+html {
+    padding-bottom: 0;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+}
+
+header {
+    width: 90% !important;
+}
+
+/*-----------------------------
+    About
+-----------------------------*/
+
+.about-wrap {
+    background: #F5F5F5;
+    position: relative;
+    padding: 10%;
+    margin-top: 10px;
+}
+
+.about-wrap img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+.about-wrap h1,
+.about-wrap h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin-bottom: 2rem;
+}
+
+.about-wrap h2 {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 2rem;
+}
+
+.about-wrap p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+.about-wrap p a {
+    color: #B6B076;
+    text-decoration: underline;
+}
+
+.clients {
+    padding: 2rem;
+    margin-top: 15%;
+    background: white;
+    width: 100%;
+}
+
+.about-wrap ul {
+    line-height: 2rem;
+    color: #555;
+}
+
+.about-wrap ul li {
+    list-style: none;
+}
+
+/*-----------------------------
+    Contact
+-----------------------------*/
+
+.contact {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.email,
+.phone {
+    background: white;
+    padding: 1rem;
+    color: #B6B076;
+    display: inline-block;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem
+}
+
+.email i,
+.phone i {
+    margin-right: .75rem;
+}
+
+
+/*-----------------------------
+    Media Queries
+-----------------------------*/
+
+@media only screen and (min-width: 480px) {
+
+    .about-wrap img {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width: 720px) {
+
+    .about-wrap ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .clients {
+        padding: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .about-wrap img {
+        float: left;
+        max-width: 350px;
+        margin-right: 3rem;
+    }
+
+    .clients {
+        padding: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    .about-wrap p {
+        font-size: 1.5rem;
+    }
+
+    .about-wrap ul {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+
+}
+
+@media only screen and (min-width: 1625px) {
+
+    .about-wrap {
+        padding: 8% 18% 10rem 18%;
+    }
+
+}

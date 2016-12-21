@@ -1,0 +1,200 @@
+/*-----------------------------
+    Animation
+-----------------------------*/
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}}
+
+@-webkit-keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}}
+
+@keyframes slide-down {
+    from {transform: translateY(-2rem);}
+    to {transform: translateY(0);}}
+
+@-webkit-keyframes slide-down {
+    from {-webkit-transform: translateY(-2rem);}
+    to {-webkit-transform: translateY(0);}}
+
+/*-----------------------------
+    Base
+-----------------------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #ccc;
+    font-size: 16px;
+    padding-bottom: 10rem;
+}
+
+body {
+    background: white;
+    font-family: 'Sentinel A', 'Sentinel B';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 90%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*-----------------------------
+    Navigation
+-----------------------------*/
+
+header {
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 10rem;
+    line-height: 10.3rem;
+    z-index: 1000;
+    position: relative;
+    -webkit-animation: fade-in 750ms ease-out, slide-down 750ms ease-out;
+    animation: fade-in 750ms ease-out, slide-down 750ms ease-out;
+}
+
+.logo a {
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    float: left;
+    text-decoration: none;
+}
+
+.lightgray { color: #ccc; }
+
+.navicon { display: none; }
+
+nav ul { text-align: right; }
+
+nav li {
+    display: inline;
+    margin-left: 1.25rem;
+}
+
+a,
+.navicon {
+    color: #ccc;
+    fill: #ccc;
+    text-decoration: none;
+    transition: color 500ms ease,
+                fill 500ms ease;
+    cursor: pointer;
+}
+
+a:hover,
+.navicon:hover {
+  color: #B6B076;
+  fill: #B6B076;
+}
+
+nav a.current {
+    color: #555;
+    pointer-events: none;
+}
+
+.sidr .current {
+    color: #B6B076;
+}
+
+/*-----------------------------
+    Grid
+-----------------------------*/
+
+#grid {
+    position: relative;
+    width: 100%;
+}
+
+#grid li {
+    display: block;
+    list-style: none;
+    padding: .625rem;
+    width: 20%;
+    transition: left 350ms cubic-bezier(.4,-0.4,.4,1.4);
+}
+
+#grid li img {
+    display: block; /* to remove default inline-block line-height */
+    height: auto;
+    width: 100%;
+}
+
+/*-----------------------------
+    Media Queries
+-----------------------------*/
+
+@media only screen and (max-width: 669px) {
+
+    body {
+        width: 100% !important;
+        padding: 0 1.25rem;
+    }
+
+    header {
+        height: 4.5em !important;
+        line-height: 5rem !important;
+        padding: 0;
+    }
+
+    #navigation { display: none; }
+
+    #grid li > a {
+       pointer-events: none;
+       cursor: default;
+       -webkit-touch-callout: none;
+       -webkit-appearance: none;
+       -webkit-user-select: none;
+    }
+
+    #grid li {
+        position: static !important;
+        width: 100% !important;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+
+    .lightgray { display: none; }
+
+    i { display: block; }
+
+    .navicon {
+        vertical-align: middle;
+        display: inline-block;
+        float: right;
+        margin-top: 1px;
+        padding: 1rem;
+        margin: -1rem;
+    }
+
+    #navigation { display: none; }
+}
+
+
+@media only screen and (min-width: 670px) {
+    header { width: 600px; }
+}
+
+@media only screen and (min-width: 1005px) and (max-width: 1340px) {
+    header { width: 910px; }
+    .logo a { font-size: .85rem; }
+    nav { font-size: .95rem; }
+}
+
+@media only screen and (min-width: 1340px) {
+    header { width: 1210px; }
+}
+
+@media only screen and (min-width: 1675px) {
+    header { width: 100%; }
+}
