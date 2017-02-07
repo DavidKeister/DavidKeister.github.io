@@ -107,7 +107,7 @@ nav a.current {
 
 /*New*/
 nav ul .subNav ul {
-	display: none;
+	text-align: right;
 }
 
 nav ul .subNav:hover ul{
@@ -115,10 +115,17 @@ nav ul .subNav:hover ul{
 }
 
 nav ul .subNav ul li {
-
+	display: inline;
+    margin-left: 1.25rem;
 }
 
 nav ul .subNav ul li a {
+	color: #ccc;
+    fill: #ccc;
+    text-decoration: none;
+    transition: color 500ms ease,
+                fill 500ms ease;
+    cursor: pointer;
 }
 
 nav li.subNav ul li a:link, nav li.subNav ul li a:visited {
