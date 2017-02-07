@@ -127,13 +127,11 @@ nav ul .subNav ul li a {
 	color: #333;
 }
 
-nav li.subNav ul li a:link, nav li.subNav ul li a:visited {
-	color: #ccc;
-    fill: #ccc;
+nav li.subNav ul li a:link, #nav li.subNav ul li a:visited {
+	color: #333;
 }
-nav li.subNav ul li a:hover, nav li.subNav ul li a:active {
-	color: #B6B076;
-	fill: #B6B076;
+nav li.subNav ul li a:hover, #nav li.subNav ul li a:active {
+	color: #F34B2B;
 }
 
 .highlight{
