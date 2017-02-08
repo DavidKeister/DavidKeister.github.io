@@ -58,7 +58,7 @@ header {
     margin: 0 auto;
     padding: 0 10px;
     height: 10rem;
-    line-height: 10.3rem;
+    line-height: 10rem;
     z-index: 1000;
     position: relative;
     -webkit-animation: fade-in 750ms ease-out, slide-down 750ms ease-out;
@@ -113,28 +113,24 @@ nav a.current {
 /* Nav Demo Styles -------------------- */
 
 .main-nav {
-  background: #555;
-}
-.drop-nav {
-  background: #555;
-}
-.main-nav {
+  height: 1rem;
+  line-height: 1rem;
   float: right;
   border-radius: 4px;
-  margin-top: 8px;
-  /*border: solid 1px #1e2a36;*/
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
-.main-nav:hover{
-  background: #555;
-  border: solid 1px #1e2a36;
+.drop-nav {
 }
+
 .main-nav > li {
   float: left;
-  /*border-left: solid 1px #1e2a36;*/
 }
+
 .main-nav li:first-child {
   border-left: none;
 }
+
 .main-nav a {
   color: #ccc;
   fill: #ccc;
@@ -142,151 +138,29 @@ nav a.current {
   transition: color 500ms ease,
     fill 500ms ease;
   cursor: pointer;
-  /*color: #fff;
-  display: block;
-  padding: 10px 30px;
-  text-decoration: none;*/
 }
+
 .dropdown{
   position: relative;
 }
+
 .drop-nav{
   position: absolute;
   display: none;
 }
+
 .drop-nav li {
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
+
 .dropdown:hover > .drop-nav{
   display: block;
 }
 
-/*-----------------------------
-    Animation
------------------------------*/
-
-@keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}}
-
-@-webkit-keyframes fade-in {
-    from {opacity: 0;}
-    to {opacity: 1;}}
-
-@keyframes slide-down {
-    from {transform: translateY(-2rem);}
-    to {transform: translateY(0);}}
-
-@-webkit-keyframes slide-down {
-    from {-webkit-transform: translateY(-2rem);}
-    to {-webkit-transform: translateY(0);}}
-
-/*-----------------------------
-    Base
------------------------------*/
-
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    color: #ccc;
-    font-size: 16px;
-    padding-bottom: 10rem;
-}
-
-body {
-    background: white;
-    font-family: 'Sentinel A', 'Sentinel B';
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 auto;
-    width: 90%;
-    -webkit-font-smoothing: antialiased;
-}
-
-/*-----------------------------
-    Navigation
------------------------------*/
-
-header {
-    margin: 0 auto;
-    padding: 0 10px;
-    height: 10rem;
-    line-height: 10.3rem;
-    z-index: 1000;
-    position: relative;
-    -webkit-animation: fade-in 750ms ease-out, slide-down 750ms ease-out;
-    animation: fade-in 750ms ease-out, slide-down 750ms ease-out;
-}
-
-.logo a {
-    color: #555;
-    text-transform: uppercase;
-    letter-spacing: .25rem;
-    float: left;
-    text-decoration: none;
-}
-
-.lightgray { color: #ccc; }
-
-.navicon { display: none; }
-
-nav ul { text-align: right; }
-
-nav li {
-    display: inline;
-    margin-left: 1.25rem;
-}
-
-a,
-.navicon {
-    color: #ccc;
-    fill: #ccc;
-    text-decoration: none;
-    transition: color 500ms ease,
-                fill 500ms ease;
-    cursor: pointer;
-}
-
-a:hover,
-.navicon:hover {
+.drop-nav a:hover, .dropdown a:hover {
   color: #B6B076;
   fill: #B6B076;
 }
-
-nav a.current {
-    color: #555;
-    pointer-events: none;
-}
-
-.sidr .current {
-    color: #B6B076;
-}
-
-/*New*/
-.dropdown {
-  position: relative;
-}
-
-
-.drop-nav {
-  position: absolute;
-  display: none;
-}
-
-.dropnav li {
-  border-bottom: 1px solid rgba(255,255,255, .2);
-}
-
-.dropdown:hover > .drop-nav {
-  display: block;
-}
-/*New*/
 
 /*-----------------------------
     Grid
