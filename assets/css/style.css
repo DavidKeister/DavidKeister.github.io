@@ -328,7 +328,7 @@ nav a.current {
         padding: 0;
     }
 
-    /*#navigation { display: none; }*/
+    #navigation { display: none; }
 
     #grid li > a {
        pointer-events: none;
@@ -360,7 +360,7 @@ nav a.current {
         margin: -1rem;
     }
 
-    /*#navigation { display: none; }*/
+    #navigation { display: none; }
 }
 
 
