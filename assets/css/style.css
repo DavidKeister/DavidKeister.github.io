@@ -109,6 +109,9 @@ nav a.current {
     color: #B6B076;
 }
 
+.sidr li.dropdown:hover{
+}
+
 .sidr ul.drop-nav {
     display:none;
 }
@@ -164,10 +167,6 @@ nav a.current {
 .drop-nav a:hover, .dropdown a:hover {
   color: #B6B076;
   fill: #B6B076;
-}
-
-.navicon .dropdown:hover > .drop-nav{
-display:none;
 }
 
 /*-----------------------------
