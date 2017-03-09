@@ -166,6 +166,10 @@ nav a.current {
   fill: #B6B076;
 }
 
+.navicon .dropdown:hover > .drop-nav{
+display:none;
+}
+
 /*-----------------------------
     Grid
 -----------------------------*/
