@@ -109,6 +109,10 @@ nav a.current {
     color: #B6B076;
 }
 
+.sidr ul.drop-nav {
+    display:none;
+}
+
 
 /* Nav Demo Styles -------------------- */
 
