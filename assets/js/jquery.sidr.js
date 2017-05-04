@@ -306,10 +306,10 @@
             e.preventDefault();
             methods.toggle(name);
           });
-		  $('.dropdown').click(function(e) {
-			e.preventDefault();
-			$(this).next().slideToggle();
-		  });
+		  //$('.dropdown').click(function(e) {
+			//e.preventDefault();
+			//$(this).next().slideToggle();
+		  //});
         }
       }
     });

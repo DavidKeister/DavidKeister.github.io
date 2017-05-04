@@ -109,58 +109,14 @@ nav a.current {
     color: #B6B076;
 }
 
-.sidr li.dropdown:hover{
-}
-
-.sidr ul.drop-nav {
-    display:none;
-}
-
-
 /* Nav Demo Styles -------------------- */
 
-.main-nav {
-  height: 1rem;
-  line-height: 1rem;
-  float: right;
-  border-radius: 4px;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
-}
-.drop-nav {
-}
 
-.main-nav > li {
-  float: left;
-}
-
-.main-nav li:first-child {
-  border-left: none;
-}
-
-.main-nav a {
-  color: #ccc;
-  fill: #ccc;
-  text-decoration: none;
-  transition: color 500ms ease,
-    fill 500ms ease;
-  cursor: pointer;
-}
-
-.dropdown{
+.main-nav.drop-nav.dropdown {
   position: relative;
 }
 
-.drop-nav{
-  position: absolute;
-  display: none;
-}
-
-.drop-nav li {
-  border-bottom: 1px solid rgba(255,255,255,.2);
-}
-
-.dropdown:hover > .drop-nav{
+.main-nav.drop-nav.dropdown:hover > .main-nav.drop-nav{
   display: block;
 }
 
