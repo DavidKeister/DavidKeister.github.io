@@ -109,22 +109,6 @@ nav a.current {
     color: #B6B076;
 }
 
-/* Nav Demo Styles -------------------- */
-
-
-.main-nav.drop-nav.dropdown {
-  position: relative;
-}
-
-.main-nav.drop-nav.dropdown:hover > .main-nav.drop-nav{
-  display: block;
-}
-
-.drop-nav a:hover, .dropdown a:hover {
-  color: #B6B076;
-  fill: #B6B076;
-}
-
 /*-----------------------------
     Grid
 -----------------------------*/
@@ -203,6 +187,50 @@ nav a.current {
 
 @media only screen and (min-width: 670px) {
     header { width: 600px; }
+}
+
+@media only screen and (min-width: 1005px) {
+	.main-nav{
+		height: 1rem;
+		line-height: 1rem;
+		float: right;
+		border-radius: 4px;
+		margin-top: 6rem;
+		margin-bottom: 4rem;
+	}
+	
+	.main-nav > li{
+		float: left;
+	}
+	
+	.main-nav li:first-child{
+		border-left: none;
+	}
+	
+	.dropdown{
+		position: relative;
+	}
+	
+	.drop-nav{
+		position: absolute;
+		display: none;
+	}
+	
+	.drop-nav li {
+		border-bottom: 1px solid rgba(255,255,255,.2);
+	}
+	
+	.dropdown > .drop-nav {
+		position: relative;
+		top: 100%;
+		max-height: 0;
+		overflow: hidden;
+		-webkit-transition: 0.5s;
+	}
+	.dropdown:hover .drop-nav {
+		max-height: 500px;
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 1005px) and (max-width: 1340px) {

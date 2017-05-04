@@ -46,29 +46,6 @@ $(document).ready(function(){
 	$('.drop-nav').hide();
 	$("#sidr li:has(ul)").click(function(){
 	$("ul",this).toggle('fast');
-	
-	/* When the user clicks on the button, 
-	toggle between hiding and showing the dropdown content */
-	var dropdownclassname = document.getElementByClassName("dropdown-toggle");
-	dropdownclassname.addEventListener("click", myFunction);
-	
-	function myFunction() {
-		if( $(window).width() >= 669 ){
-			document.getElementByClassName("drop-nav").classList.toggle("show");
-		}
-	}
-
-	// Close the dropdown if the user clicks outside of it
-	window.onclick = function(e) {
-	  if( $(window).width() >= 669 ){
-		  if (!e.target.matches('.dropdown')) {
-			var myDropdown = document.getElementByClassName("drop-nav");
-			  if (myDropdown.classList.contains('show')) {
-				myDropdown.classList.remove('show');
-			  }
-		  }
-	  }
-	}
 });
 
 });
